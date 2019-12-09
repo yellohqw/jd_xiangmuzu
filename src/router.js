@@ -13,6 +13,10 @@ import Login from '@/views/login/Login.vue'
 const router = new VueRouter({
     routes:[
     {
+     path:'/',
+     redirect:'/home'
+    },
+    {
         path:'/home',
         component:Home
     },
