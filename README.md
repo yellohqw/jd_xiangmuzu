@@ -20,5 +20,10 @@ npm run build
 npm run lint
 ```
 
+#### 1、项目创建于2019年10月30日
+
+
+
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
