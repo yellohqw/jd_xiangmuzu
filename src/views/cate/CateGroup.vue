@@ -9,7 +9,9 @@
       <!-- 二层循环 -->
       <!-- 这里的 item是外层循环中的item -->
       <div class="cate_panel_item" v-for="(item2, index2) in item.list" :key='index2'>
-        <img :src="item2.img" alt="">
+        <img :src="item2.img" alt=""
+        @click="skip"
+        >
         <span v-text='item2.name'></span>
       </div>
     </div>
@@ -22,6 +24,11 @@ import { mapState } from 'vuex'
 export default {
   computed: {
     ...mapState(['curCateGroup'])
+  },
+  methods:{
+    skip(){
+      this.$router.push('/products')
+    }
   }
 }
 </script>

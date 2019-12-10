@@ -9,6 +9,7 @@ import Jdm from '@/views/jdm/Jdm.vue'
 import Cart from '@/views/cart/Cart.vue'
 import User from '@/views/user/User.vue'
 import Login from '@/views/login/Login.vue'
+import Products from '@/views/products/Products.vue'
 
 const router = new VueRouter({
     routes:[
@@ -39,6 +40,10 @@ const router = new VueRouter({
     {
         path:'/login',
         component:Login
+    },
+    {
+        path:'/products',
+        component:Products
     }
     ]
 })
