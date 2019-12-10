@@ -1,12 +1,12 @@
 <template>
 <div class="user_login">
   <div class="ul_username">
-    <input type="text" name="" value="" placeholder="请输入用户名">
+    <input type="text" name="" value="" placeholder="请输入用户名" ref = 'username'>
   </div>
   <div class="ul_password">
-    <input type="text" name="" value="" placeholder="请输入密码">
+    <input type="text" name="" value="" placeholder="请输入密码" ref = 'password'>
   </div>
-  <div class="ul_login_btn ul_login_btn1" @touchstart='login'>登录</div>
+  <div class="ul_login_btn ul_login_btn1" @click='login'>登录</div>
   <div class="ul_login_btn ul_login_btn2">一键登录</div>
   <div class="ul_login_more">
     <span>短信验证码登录</span>
@@ -25,7 +25,10 @@ export default {
       // 数据验证
       // 提交接口
       // res代表登录成功后，后端返回的数据信息，其中包括token和其它用户数据
-      let res = {
+      let username = this.$refs.username.value
+      let password = this.$refs.password.value
+      if(username === 'zhangsan' && password === '123456'){
+        let res = {
         token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c',
         isLogin: 1
       }
@@ -37,6 +40,15 @@ export default {
       setTimeout(()=>{
         this.$router.replace('/home')
       }, 2000)
+      } else {
+        this.$refs.username.value = ''
+        this.$refs.password.value = ''
+        this.$toast({
+        message: '密码或账号错误',
+        duration: 2000
+      })
+      }
+       
     }
   }
 }
@@ -86,3 +98,7 @@ export default {
   }
 }
 </style>
+
+
+
+
