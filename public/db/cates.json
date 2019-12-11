@@ -44,6 +44,40 @@
                         }
 
                     ]
+                },
+                {
+                    "title":"当季主推",
+                    "list":[
+                        {
+                            "img":"//img30.360buyimg.com/focus/s140x140_jfs/t19531/110/2538137867/14848/c3ec84ac/5afd3cc5N8aa4b7c8.jpg",
+                            "name":"美白"
+                        },
+                        {
+                            "img":"//img30.360buyimg.com/focus/s140x140_jfs/t17560/320/2504739891/10347/f04150c4/5afd3cbeN77d00886.jpg",
+                            "name":"防晒"
+                        },
+                        {
+                            "img":"//img14.360buyimg.com/focus/s140x140_jfs/t19291/98/2577005836/12222/7107fb29/5afd3cc9N3add85ae.jpg",
+                            "name":"控油"
+                        }
+                    ]
+                },
+                {
+                    "title":"拔草推荐",
+                    "list":[
+                        {
+                            "img":"//img10.360buyimg.com/focus/s140x140_jfs/t19759/351/2599036909/13944/24601ad4/5afd3d66Nbb817b81.jpg",
+                            "name":"明星同款面膜"
+                        },
+                        {
+                            "img":"//img10.360buyimg.com/focus/s140x140_jfs/t20356/99/118471868/26414/e301e0b7/5afd3d61Ne42d8f0d.jpg",
+                            "name":"显白口红"
+                        },
+                        {
+                            "img":"//img10.360buyimg.com/focus/s140x140_jfs/t19453/253/2549990863/33320/e0515773/5afd3d5cN85837566.jpg",
+                            "name":"小美盒"
+                        }
+                    ]
                 }
             ]
         },

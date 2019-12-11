@@ -6,14 +6,14 @@
    </router-link>
   <mt-button icon="more" slot="right" @click="ball"></mt-button>
 </mt-header>
- <mt-search placeholder="搜索你想要的产品"></mt-search>
+ <mt-search placeholder="搜索你想要的东西"></mt-search>
 </div>
 </template>
 <script>
 export default {
 data(){
     return{
-     ishow:true
+    //  ishow:true
     }
 },
 methods:{
@@ -33,6 +33,9 @@ ball(){
 .mint-header-button{
     color: #252525
 }
+.mint-search{
+    height:0px;
+}
 .mint-searchbar {
     position: absolute;
     left: 40px;
@@ -47,6 +50,8 @@ ball(){
         border-radius: 15px;
         .mint-searchbar-core{
             background: #f7f7f7;
+            font-size:14px;
+            margin-left:.133333rem;
         }
     }
 }
