@@ -3,7 +3,10 @@
   <div class="top">
     <span><img :src="icons.skillIcon" alt=""></span>
     <span>0点场</span>
-    <span>02:10:47</span>
+    <span>
+     <!-- //引入倒计时的组件 -->
+     <CountDown></CountDown>
+    </span>
     <span>
       更多秒杀 <i class="fa fa-chevron-circle-right"></i>
     </span>
@@ -20,6 +23,7 @@
 </template>
 
 <script>
+import CountDown from '@/components/CountDown.vue'
 import { icons } from '@/assets/index'
 import { mapState, mapActions } from 'vuex'
 import SkillGood from './SkillGood.vue'
@@ -30,7 +34,8 @@ export default {
     }
   },
   components: {
-    SkillGood     // 单个商品组件
+    SkillGood, // 单个商品组件
+    CountDown,//注册倒计时组件
   },
   computed: {
     ...mapState(['skillArr'])

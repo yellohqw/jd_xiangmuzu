@@ -1,29 +1,18 @@
-# vue-jdm-projcet
+﻿#项目描述：
 
-## Project setup
-```
-npm install
-```
+##项目名称： vue-jdm-projcet
+ ###组员：Qiwei.huang、Mu.chen Lingyou.wu
+ ###创建时间：2019-12-9
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+1：下载依赖项：npm install
 
-### Compiles and minifies for production
-```
-npm run build
-```
+2：启动项目的命令：npm run serve
 
-### Lints and fixes files
-```
-npm run lint
-```
+3：打包项目的命令：npm run build
 
-#### 1、项目创建于2019年10月30日
+第一天：
+
+登录账号：zhangsan
 
 
-
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+登录密码：123456

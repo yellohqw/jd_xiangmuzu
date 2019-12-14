@@ -10,14 +10,23 @@
     <input type="text" placeholder="电脑主机">
   </div>
 
-  <span>登录</span>
+  <span @click="skip">登录</span>
 
 </div>
 </template>
 
 <script>
 export default {
+data(){
+  return{
 
+  }
+},
+methods:{
+  skip(){
+    this.$router.replace('/login')
+  }
+}
 }
 </script>
 
@@ -79,6 +88,7 @@ export default {
       outline: none;
       border: none;
       padding-left: .2rem;
+      font-size: 12px;
     }
   }
   > span {
